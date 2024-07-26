@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <style>
+
+
+        .btn{
+            height: 70px;
+            width: 70px;
+            border-radius: 5%;
+            border: solid green 5px;
+            background-color: whitesmoke;
+        }
+        #box-1{
+            font-size: large;
+            font-family: cursive;
+            border-radius: 10%;
+            border: solid black 5px;
+            height: 100px;
+            width:280px;
+           
+        }
+    </style>
+</head>
+<body style="background-color:cornflowerblue" >
+    <table style="padding: 10px;">
+        <tr >
+            <td  colspan="4"><input id="box-1" type="text" placeholder="Enter:"></td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="clearInput()">CLEAR</button></td>
+            <td><button class="btn" onclick="removeElement()">X</button></td>
+            <td><button class="btn" onclick="calculateResult()">=</button></td>
+            <td><button class="btn" onclick="appendToInput('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="appendToInput('7')">7</button></td>
+            <td><button class="btn" onclick="appendToInput('8')">8</button></td>
+            <td><button class="btn" onclick="appendToInput('9')">9</button></td>
+            <td><button class="btn" onclick="appendToInput('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="appendToInput('6')">6</button></td>
+            <td><button class="btn" onclick="appendToInput('5')">5</button></td>
+            <td><button class="btn" onclick="appendToInput('4')">4</button></td>
+            <td><button class="btn" onclick="appendToInput('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="appendToInput('3')">3</button></td>
+            <td><button class="btn" onclick="appendToInput('2')">2</button></td>
+            <td><button class="btn" onclick="appendToInput('1')">1</button></td>
+            <td><button class="btn" onclick="appendToInput('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" onclick="appendToInput('.')">.</button></td>
+            <td><button class="btn" onclick="appendToInput('0')">0</button></td>
+            <td><button class="btn" onclick="appendToInput('e')">e</button></td>
+            <td><button class="btn" onclick="appendToInput('%')">%</button></td>
+        </tr>
+    </table>
+    <script src="./Script1.js"></script>
+</body>
+</html>
