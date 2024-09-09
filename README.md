@@ -1,1 +1,1 @@
-# JavaScript-Simple-Calc
+# JavaScript
